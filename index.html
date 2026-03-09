@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Velox</title>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER
+       Fixed floating pill nav — collapses to a glowing dot.
+       6 links: Home, Perfumes, Work, About, People, Milestone
+       ============================================================ -->
+  <div class="header-wrapper">
+    <header id="mainHeader">
+      <div class="header-inner">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#perfumes">Perfumes</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#people">People</a></li>
+            <li><a href="#milestone">Milestone</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       Full-width headline + clustered perfume bottle images
+       ============================================================ -->
+  <section class="perfume-section" id="home">
+
+    <!-- Left: headline + description -->
+    <div class="perfume-text">
+      <h1>RARE BY  <br />NATURE </h1>
+      <p>
+        Discover a world of luxury fragrances crafted from the finest
+        ingredients. Each bottle holds a story — a journey through exotic
+        notes that linger on the skin and captivate the senses.
+      </p>
+    </div>
+
+    <!-- Right: three overlapping bottle images -->
+    <div class="perfume-image">
+      <img class="perfume-3" src="/static/perfume-3.png" alt="Perfume 3" />
+      <img class="perfume-2" src="/static/perfume-2.png" alt="Perfume 2" />
+      <img class="perfume-1" src="/static/perfume.png"   alt="Perfume 1" />
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       SCENTS / COLLECTION SECTION
+       3-column grid of signature fragrance cards
+       ============================================================ -->
+  <section class="scents-section" id="perfumes">
+
+    <!-- Section header — revealed on scroll -->
+    <div class="scents-header">
+      <span class="scents-label">— Collection —</span>
+      <h2 class="scents-title">Signature Scents</h2>
+      <p class="scents-sub">Each fragrance is a carefully composed symphony of rare materials</p>
+    </div>
+
+    <!-- Card grid -->
+    <div class="scents-grid">
+
+      <!-- Card 01 -->
+      <div class="scent-card">
+        <div class="scent-img-wrap">
+          <img src="/static/Noir-Absolu.jpg" alt="Noir Absolu" />
+          <div class="scent-glow"></div>
+        </div>
+        <div class="scent-info">
+          <span class="scent-number">01</span>
+          <h3>Noir Absolu</h3>
+          <p>Dark oud, smoked amber, and black musk — a commanding presence that lingers.</p>
+          <div class="scent-tags">
+            <span>Oud</span>
+            <span>Amber</span>
+            <span>Musk</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 02 — featured (floats higher) -->
+      <div class="scent-card scent-card--featured">
+        <div class="scent-img-wrap">
+          <img src="/static/Volex-Jade.png" alt="Velox Jade" />
+          <div class="scent-glow"></div>
+        </div>
+        <div class="scent-info">
+          <span class="scent-number">02</span>
+          <h3>Velox Jade</h3>
+          <p>Fresh green tea, white cedar, and a whisper of jasmine at dusk.</p>
+          <div class="scent-tags">
+            <span>Cedar</span>
+            <span>Jasmine</span>
+            <span>Tea</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 03 -->
+      <div class="scent-card">
+        <div class="scent-img-wrap">
+          <img src="/static/Sable-Dore.jpg" alt="Sable Dore" />
+          <div class="scent-glow"></div>
+        </div>
+        <div class="scent-info">
+          <span class="scent-number">03</span>
+          <h3>Sable Dore</h3>
+          <p>Warm sandalwood, vanilla bourbon, and golden iris petals at sunrise.</p>
+          <div class="scent-tags">
+            <span>Sandalwood</span>
+            <span>Vanilla</span>
+            <span>Iris</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WORK SECTION
+       Process timeline → philosophy banner → commitment cards
+       ============================================================ -->
+  <section class="work-section-full" id="work">
+
+    <!-- Section header — revealed on scroll -->
+    <div class="work-header">
+      <span class="work-label">OUR CRAFT</span>
+      <h2 class="work-title">THE WORK</h2>
+      <p class="work-sub">Every bottle tells a story. Every story begins with intention.</p>
+    </div>
+
+    <!-- Vertical 4-step process timeline -->
+    <div class="work-process">
+      <div class="work-process-line"></div>
+
+      <div class="work-step">
+        <div class="work-step-num">01</div>
+        <div class="work-step-content">
+          <h4>Sourcing Ingredients</h4>
+          <p>We travel to the most remote corners of the world — Grasse, Madagascar, the Oud forests of Southeast Asia — to handpick ingredients of uncompromising purity. Only the finest raw materials make their way into our atelier.</p>
+        </div>
+      </div>
+
+      <div class="work-step">
+        <div class="work-step-num">02</div>
+        <div class="work-step-content">
+          <h4>The Blending Atelier</h4>
+          <p>Our master perfumers spend months, sometimes years, layering top notes, heart notes, and base notes until the composition breathes as one. Each formula is hand-written and sealed — a secret passed down through generations.</p>
+        </div>
+      </div>
+
+      <div class="work-step">
+        <div class="work-step-num">03</div>
+        <div class="work-step-content">
+          <h4>Maceration & Aging</h4>
+          <p>After blending, every fragrance rests in cool darkness for a minimum of six weeks. This maceration period allows each note to marry, deepen, and fully express its character before a single drop is bottled.</p>
+        </div>
+      </div>
+
+      <div class="work-step">
+        <div class="work-step-num">04</div>
+        <div class="work-step-content">
+          <h4>The Final Bottle</h4>
+          <p>Each flacon is hand-filled, sealed with a hand-tied ribbon, and numbered. The bottle itself is a sculpture — designed to sit on your vanity as a piece of art long after the last drop is gone.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Philosophy banner with inline stats — revealed on scroll -->
+    <div class="work-banner">
+      <div class="work-banner-glow"></div>
+      <span class="work-banner-label">PHILOSOPHY</span>
+      <h3 class="work-banner-title">
+        Scent is the only sense <br />
+        <em>that bypasses reason</em>
+      </h3>
+      <p class="work-banner-text">
+        We don't make perfumes. We architect emotional memory — invisible
+        architecture you carry with you, that announces your arrival before
+        your words do.
+      </p>
+      <div class="work-banner-divider"></div>
+      <div class="work-banner-stats">
+        <div class="work-bstat">
+          <span class="work-bstat-num">120+</span>
+          <span class="work-bstat-lbl">Raw Ingredients</span>
+        </div>
+        <div class="work-bstat-sep"></div>
+        <div class="work-bstat">
+          <span class="work-bstat-num">6 Weeks</span>
+          <span class="work-bstat-lbl">Minimum Maceration</span>
+        </div>
+        <div class="work-bstat-sep"></div>
+        <div class="work-bstat">
+          <span class="work-bstat-num">Hand</span>
+          <span class="work-bstat-lbl">Numbered & Sealed</span>
+        </div>
+        <div class="work-bstat-sep"></div>
+        <div class="work-bstat">
+          <span class="work-bstat-num">Zero</span>
+          <span class="work-bstat-lbl">Synthetic Shortcuts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3-column commitment cards — revealed on scroll -->
+    <div class="work-cards">
+
+      <div class="work-card">
+        <span class="work-card-icon">✦</span>
+        <h4>Natural Extraction</h4>
+        <p>Steam distillation, cold-press, and enfleurage — we use only time-honoured techniques that preserve the full aromatic truth of each ingredient.</p>
+        <div class="work-card-tag">PROCESS</div>
+      </div>
+
+      <!-- Featured card (floats higher) -->
+      <div class="work-card work-card--featured">
+        <span class="work-card-icon">◈</span>
+        <h4>Limited Batches</h4>
+        <p>Every fragrance is produced in numbered batches of no more than 300 bottles. Exclusivity is not a marketing strategy — it is a quality standard we refuse to compromise.</p>
+        <div class="work-card-tag">INTEGRITY</div>
+      </div>
+
+      <div class="work-card">
+        <span class="work-card-icon">⬡</span>
+        <h4>Transparent Provenance</h4>
+        <p>Every bottle includes a provenance card naming the origin country, harvest year, and extraction method of its dominant ingredient. You deserve to know what you wear.</p>
+        <div class="work-card-tag">HONESTY</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION  (full long version)
+       Header → Origin Story → Philosophy → Team → Timeline → Stats
+       ============================================================ -->
+  <section class="about-section-full" id="about">
+
+    <!-- Section header — revealed on scroll -->
+    <div class="about-header-full">
+      <span class="about-label-full">OUR STORY</span>
+      <h2 class="about-title-full">THE ESSENCE<br /><em>OF WHO WE ARE</em></h2>
+      <p class="about-sub-full">
+        Born from obsession. Refined through decades. Every fragrance we create
+        carries the weight of our conviction — that scent is the most intimate
+        form of self-expression.
+      </p>
+    </div>
+
+    <!-- ── Origin Story: images left, text right ── -->
+    <div class="about-origin">
+
+      <!-- Left: stacked images with floating year badge -->
+      <div class="about-origin-visual">
+        <div class="about-origin-img-main">
+          <img src="/static/perfume-1.jpg" alt="Perfume atelier" />
+        </div>
+        <div class="about-origin-img-accent">
+          <img src="/static/perfume-2.jpg" alt="Ingredients" />
+        </div>
+        <div class="about-origin-badge">
+          <span class="about-origin-badge-num">1998</span>
+          <span class="about-origin-badge-lbl">EST.</span>
+        </div>
+        <div class="about-glow-blob-full"></div>
+      </div>
+
+      <!-- Right: story text + pull quote -->
+      <div class="about-origin-text">
+        <span class="about-section-label">WHERE IT BEGAN</span>
+        <h3>A single bottle.<br /><em>A lifelong pursuit.</em></h3>
+        <p>
+          It started in a small apartment in Grasse, France — the perfume
+          capital of the world — where our founder, surrounded by bottles of
+          raw oud, jasmine absolute, and Himalayan cedarwood, blended the first
+          formula by hand on a wooden table that still sits in our atelier today.
+        </p>
+        <p>
+          What began as a personal obsession became a quiet revolution. Word
+          spread not through advertising, but through memory — through the moment
+          someone wearing our fragrance walked into a room and made everyone stop
+          and ask: <em>"What is that scent?"</em>
+        </p>
+        <div class="about-origin-divider"></div>
+        <div class="about-origin-quote">
+          <span class="about-quote-mark">"</span>
+          <p>I didn't want to make a perfume. I wanted to make a feeling you could wear.</p>
+          <span class="about-quote-author">— Founder, 1998</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Philosophy Strip: title + 4 pillar cards ── -->
+    <div class="about-philosophy">
+      <div class="about-philosophy-glow"></div>
+      <span class="about-section-label">OUR PHILOSOPHY</span>
+      <h3 class="about-philosophy-title">
+        We believe fragrance<br />is <em>invisible architecture</em>
+      </h3>
+      <p class="about-philosophy-text">
+        Just as a great building shapes how you feel inside it — expansive,
+        intimate, sacred, playful — a great fragrance shapes how you move
+        through the world. We design ours with the same care an architect
+        gives to light, proportion, and silence.
+      </p>
+
+      <div class="about-philosophy-pillars">
+
+        <div class="about-pillar">
+          <span class="about-pillar-icon">◈</span>
+          <h4>Truthfulness</h4>
+          <p>No synthetic shortcuts. No misleading marketing. What is in the bottle is exactly what we say it is — nothing more, nothing less.</p>
+        </div>
+
+        <div class="about-pillar">
+          <span class="about-pillar-icon">✦</span>
+          <h4>Restraint</h4>
+          <p>We release fewer than five new fragrances per year. Each one takes no less than two years to perfect. We would rather be silent than say something forgettable.</p>
+        </div>
+
+        <div class="about-pillar">
+          <span class="about-pillar-icon">⬡</span>
+          <h4>Memory</h4>
+          <p>Every scent we create is engineered to last — not just on skin, but in the mind. The best fragrances don't fade; they become part of who you are.</p>
+        </div>
+
+        <div class="about-pillar">
+          <span class="about-pillar-icon">◉</span>
+          <h4>Provenance</h4>
+          <p>We know the name of every farm, every harvest season, every distiller behind every ingredient we use. Origin is not a detail — it is everything.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Team Grid: header + 3 portrait cards ──
+         id="people" — anchor target for the People nav link -->
+    <div class="about-team" id="people">
+
+      <!-- Team header — revealed on scroll -->
+      <div class="about-team-header">
+        <span class="about-section-label">THE PEOPLE</span>
+        <h3 class="about-team-title">Hands behind<br /><em>every bottle</em></h3>
+        <p class="about-team-sub">
+          Our atelier is small by design. Twelve perfumers, four harvesters,
+          two master blenders — and zero shortcuts.
+        </p>
+      </div>
+
+      <div class="about-team-grid">
+
+        <div class="about-team-card">
+          <div class="about-team-img">
+            <img src="/static/perfume-section.jpg" alt="Master Perfumer" />
+            <div class="about-team-img-glow"></div>
+          </div>
+          <h4>Alain Moreau</h4>
+          <span class="about-team-role">Master Perfumer</span>
+          <p>Thirty years crafting in Grasse. Alain's nose has been called "a living archive of the natural world." He approves every final formula personally.</p>
+        </div>
+
+        <!-- Featured card (floats higher) -->
+        <div class="about-team-card about-team-card--featured">
+          <div class="about-team-img">
+            <img src="/static/perfume-section-2.jpg" alt="Founder" />
+            <div class="about-team-img-glow"></div>
+          </div>
+          <h4>Nadia Karim</h4>
+          <span class="about-team-role">Founder & Creative Director</span>
+          <p>The obsessive at the centre of everything. Nadia sources ingredients personally, approves nothing she hasn't worn for a full week, and still blends by hand.</p>
+        </div>
+
+        <div class="about-team-card">
+          <div class="about-team-img">
+            <img src="/static/perfume-section.jpg" alt="Head of Sourcing" />
+            <div class="about-team-img-glow"></div>
+          </div>
+          <h4>James Osei</h4>
+          <span class="about-team-role">Head of Ingredient Sourcing</span>
+          <p>James travels over 40,000 km each year to visit our ingredient partners — from Madagascan vanilla farms to Omani oud forests — building relationships, not transactions.</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Milestone Timeline: alternating left / right items ──
+         id="milestone" — anchor target for the Milestone nav link -->
+    <div class="about-timeline" id="milestone">
+
+      <!-- Timeline header — revealed on scroll -->
+      <div class="about-timeline-header">
+        <span class="about-section-label">MILESTONES</span>
+        <h3 class="about-timeline-title">
+          Twenty-six years<br /><em>of quiet obsession</em>
+        </h3>
+      </div>
+
+      <div class="about-timeline-track">
+        <div class="about-timeline-line"></div>
+
+        <!-- 1998 — left side -->
+        <div class="about-tl-item">
+          <div class="about-tl-dot"></div>
+          <div class="about-tl-year">1998</div>
+          <div class="about-tl-content">
+            <h4>The First Blend</h4>
+            <p>Our founder hand-blends the first formula in a Grasse apartment. Twenty bottles are made. All twenty are gifted to friends.</p>
+          </div>
+        </div>
+
+        <!-- 2003 — right side -->
+        <div class="about-tl-item about-tl-item--right">
+          <div class="about-tl-dot"></div>
+          <div class="about-tl-year">2003</div>
+          <div class="about-tl-content">
+            <h4>The Atelier Opens</h4>
+            <p>A small studio in Paris opens its doors by appointment only. The waiting list grows to six months within the first year.</p>
+          </div>
+        </div>
+
+        <!-- 2009 — left side -->
+        <div class="about-tl-item">
+          <div class="about-tl-dot"></div>
+          <div class="about-tl-year">2009</div>
+          <div class="about-tl-content">
+            <h4>First International Harvest</h4>
+            <p>James Osei joins and takes the first sourcing trip to Madagascar, establishing our direct-harvest model that every ingredient now follows.</p>
+          </div>
+        </div>
+
+        <!-- 2015 — right side -->
+        <div class="about-tl-item about-tl-item--right">
+          <div class="about-tl-dot"></div>
+          <div class="about-tl-year">2015</div>
+          <div class="about-tl-content">
+            <h4>The Numbered Edition</h4>
+            <p>We introduce hand-numbered bottles and provenance cards. The practice, radical at the time, becomes our defining signature.</p>
+          </div>
+        </div>
+
+        <!-- 2024 — left side -->
+        <div class="about-tl-item">
+          <div class="about-tl-dot"></div>
+          <div class="about-tl-year">2024</div>
+          <div class="about-tl-content">
+            <h4>26 Years, 38 Fragrances</h4>
+            <p>We have released thirty-eight fragrances in twenty-six years. Every one is still in production. None have ever been discontinued.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ── Stats Bar: 5 key numbers ── -->
+    <div class="about-stats-bar">
+      <div class="about-stats-glow"></div>
+
+      <div class="about-stat-item-full">
+        <span class="about-stat-num">38</span>
+        <span class="about-stat-lbl">Fragrances Created</span>
+      </div>
+      <div class="about-stat-sep"></div>
+
+      <div class="about-stat-item-full">
+        <span class="about-stat-num">26</span>
+        <span class="about-stat-lbl">Years of Craft</span>
+      </div>
+      <div class="about-stat-sep"></div>
+
+      <div class="about-stat-item-full">
+        <span class="about-stat-num">120+</span>
+        <span class="about-stat-lbl">Raw Ingredients</span>
+      </div>
+      <div class="about-stat-sep"></div>
+
+      <div class="about-stat-item-full">
+        <span class="about-stat-num">18</span>
+        <span class="about-stat-lbl">Countries Sourced</span>
+      </div>
+      <div class="about-stat-sep"></div>
+
+      <div class="about-stat-item-full">
+        <span class="about-stat-num">300</span>
+        <span class="about-stat-lbl">Max Bottles Per Batch</span>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       JAVASCRIPT
+       1. Header toggle  (expand / collapse on click + outside click)
+       2. Staggered delays (must run BEFORE observer is registered)
+       3. Scroll-reveal  (IntersectionObserver adds .revealed)
+       4. Smooth scroll  (nav anchor links)
+       5. Scroll shadow  (drop-shadow on header wrapper)
+       6. 3-D tilt       (perspective rotation on interactive cards)
+       ============================================================ -->
+  <script>
+
+    /* ─── 1. HEADER TOGGLE ─────────────────────────────────────── */
+
+    const header  = document.getElementById("mainHeader");
+    const wrapper = document.querySelector(".header-wrapper");
+
+    // Expand the dot into the full nav bar on click
+    header.addEventListener("click", function () {
+      if (!header.classList.contains("expanded")) {
+        header.classList.add("expanded");
+        wrapper.classList.add("expanded-wrapper");
+      }
+    });
+
+    // Collapse when the user clicks anywhere outside the header
+    document.addEventListener("click", function (e) {
+      if (!wrapper.contains(e.target) && header.classList.contains("expanded")) {
+        header.classList.remove("expanded");
+        wrapper.classList.remove("expanded-wrapper");
+      }
+    });
+
+
+    /* ─── 2. STAGGERED TRANSITION DELAYS ───────────────────────── */
+    // Applied before the observer so delays are ready when
+    // elements first enter the viewport
+
+    document.querySelectorAll(".scent-card").forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.08}s`;
+    });
+
+    document.querySelectorAll(".work-step").forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.10}s`;
+    });
+
+    document.querySelectorAll(".work-card").forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.10}s`;
+    });
+
+    document.querySelectorAll(".about-pillar").forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.08}s`;
+    });
+
+    document.querySelectorAll(".about-team-card").forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.10}s`;
+    });
+
+    document.querySelectorAll(".about-tl-item").forEach((el, i) => {
+      el.style.transitionDelay = `${i * 0.10}s`;
+    });
+
+
+    /* ─── 3. SCROLL-REVEAL OBSERVER ────────────────────────────── */
+    // Adds .revealed once an element enters the viewport,
+    // then stops watching it to keep things performant
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll(
+      // Scents
+      ".scents-header, .scent-card, "                         +
+      // Work
+      ".work-header, .work-step, .work-banner, .work-card, "  +
+      // About full
+      ".about-header-full, .about-origin-visual, "            +
+      ".about-origin-text, .about-philosophy, "               +
+      ".about-team-header, .about-team-card, "                +
+      ".about-timeline-header, .about-tl-item, .about-stats-bar"
+    ).forEach((el) => observer.observe(el));
+
+
+    /* ─── 4. SMOOTH SCROLL FOR NAV LINKS ───────────────────────── */
+    // Collapses the header first, then scrolls after a short
+    // delay so the collapse animation completes cleanly
+
+    document.querySelectorAll("nav a[href^='#']").forEach((link) => {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          header.classList.remove("expanded");
+          wrapper.classList.remove("expanded-wrapper");
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 100);
+        }
+      });
+    });
+
+
+    /* ─── 5. HEADER DROP-SHADOW ON SCROLL ──────────────────────── */
+    // Lifts the header visually once the user starts scrolling
+
+    window.addEventListener("scroll", () => {
+      wrapper.style.filter = window.scrollY > 40
+        ? "drop-shadow(0 4px 24px rgba(26,204,151,0.18))"
+        : "none";
+    });
+
+
+    /* ─── 6. 3-D TILT EFFECT ON CARDS ──────────────────────────── */
+    // Tracks mouse position inside each card and applies a
+    // subtle perspective tilt; resets cleanly on mouse leave
+
+    document.querySelectorAll(
+      ".scent-card, .work-card, .about-team-card, .about-pillar"
+    ).forEach((card) => {
+
+      card.addEventListener("mousemove", (e) => {
+        const rect = card.getBoundingClientRect();
+        const x =  ((e.clientX - rect.left) / rect.width  - 0.5) * 10;
+        const y = -((e.clientY - rect.top)  / rect.height - 0.5) * 10;
+        card.style.transform =
+          `perspective(600px) rotateX(${y}deg) rotateY(${x}deg) translateY(-8px)`;
+      });
+
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
